@@ -6,5 +6,7 @@ Rails.application.routes.draw do
     get :people, to: 'people#index'
   end
 
+  get '/people', to: 'main#index'
+
   root to: "main#index"
 end

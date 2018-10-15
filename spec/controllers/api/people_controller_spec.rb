@@ -11,10 +11,10 @@ RSpec.describe Api::PeopleController, type: :controller do
 
     it 'responds with JSON' do
       get :index, { format: :json }
-      expect(JSON.parse(response.body)).to eq([])
+      expect(JSON.parse(response.body).length).to be > 0
     end
 
-    it 'responds with correct data' do
+    it 'responds with updated data' do
       p = Person.create(name: 'Test Name', email: 'test@salesloft.com', title:'Test Title')
       get :index, { format: :json }
       people = JSON.parse(response.body)

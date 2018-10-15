@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const NAV_HEIGHT = 46;
 const AVATAR_HEIGHT = 40;
@@ -49,8 +50,18 @@ let UserBadge = ({user}) => (
   </Badge>
 );
 
+let HomeLink = ()=> (
+  <Link to='/'>Home</Link>
+);
+
+let PeopleLink = ()=> (
+  <Link to='/people'>People</Link>
+)
+
 let NavBar = ({user}) => (
   <StyledNavBar>
+    <HomeLink />
+    <PeopleLink />
     {user ? <UserBadge user={user} /> : <SignInBadge />}
   </StyledNavBar>
 );
