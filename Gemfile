@@ -27,6 +27,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'pry-rails'
   gem 'rspec-rails'
+  gem 'guard-rspec'
 end
 
 group :development do
