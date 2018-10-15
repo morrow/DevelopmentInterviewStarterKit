@@ -18,6 +18,12 @@ RSpec.describe Person, type: :model do
     expect(subject).to_not be_valid
   end
 
+  it 'requires unique email attribute' do
+    subject.save!
+    p = Person.create(name: 'Other Name', email:'test@salesloft.com', title: 'Other Title')
+    expect{ p.save! }.to raise_error(ActiveRecord::RecordInvalid,'Validation failed: Email has already been taken')
+  end
+
   it 'requires a job title attribute' do
     subject.title = nil
     expect(subject).to_not be_valid

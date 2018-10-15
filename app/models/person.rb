@@ -1,6 +1,6 @@
 class Person < ApplicationRecord
 
-  validates_presence_of :name, :title
-  validates_presence_of :email, uniqueness: true
+  validates_presence_of :name, :title, :email
+  validates_uniqueness_of :email
 
 end
