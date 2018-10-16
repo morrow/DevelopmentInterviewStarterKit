@@ -8,3 +8,76 @@ body {
   height: 100%;
   width: 100%;
 }
+
+nav {
+  display:flex;
+  justify-content:center;
+  border-bottom:1px solid #ccc;
+  align-items:center;
+}
+
+nav a {
+  text-decoration:none;
+  border:1px solid #ccc;
+  padding: 0.25em;
+  border-radius:3px;
+  color:inherit;
+  margin:0.5em;
+}
+
+nav a.active {
+  background:#ccc;
+}
+
+nav a:hover {
+  background:#eee;
+}
+
+main, .people {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+
+.person {
+  margin:1em;
+  border:1px solid #ccc;
+  border-radius:3px;
+  box-shadow:0px 0px 3px #eee;
+  padding:0.5em;
+  min-width:250px;
+  text-align: center;
+}
+
+.person .name {
+  font-weight:bold;
+}
+
+main > a {
+  font-size:2em;
+}
+
+main h1 {
+  width:100%;
+  text-align:center;
+}
+
+.home main {
+  height: 80vh;
+  align-items:center;
+  justify-content:center;
+}
+
+.home main a {
+  color: black;
+  text-decoration: none;
+  background:#eee;
+  padding:0.25em;
+  border:1px solid #ccc;
+  border-radius:6px;
+  box-shadow:0px 0px 3px #eee;
+}
+
+.home main a:hover {
+  background:#ccc;
+}
