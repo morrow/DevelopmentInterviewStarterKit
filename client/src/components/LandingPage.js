@@ -11,7 +11,7 @@ const Page = styled.div`
   width: 100%;
 `;
 
-const FlexBox = styled.div`
+const FlexBox = styled.main`
   display: flex;
   align-items: center;
   justify-content: center;

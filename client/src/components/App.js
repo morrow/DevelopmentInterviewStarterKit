@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import { ThemeProvider } from 'styled-components'
 
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom'
+import { HomePage } from './HomePage'
 import { LandingPage } from './LandingPage'
 import { PeoplePage } from './PeoplePage'
 
@@ -24,8 +25,9 @@ const App = ({ store }) => (
     <ThemeProvider theme={theme}>
       <Router>
         <Switch>
-          <Route exact path="/" component={LandingPage}/>
+          <Route exact path="/" component={HomePage}/>
           <Route exact path="/people" component={PeoplePage}/>
+          <Route exact path="/introduction" component={LandingPage}/>
         </Switch>
       </Router>
     </ThemeProvider>
