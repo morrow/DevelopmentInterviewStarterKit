@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components'
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom'
 import { HomePage } from './HomePage'
 import { LandingPage } from './LandingPage'
-import { PeoplePage } from './PeoplePage'
+import { PeoplePageContainer } from '../containers/PeoplePageContainer'
 
 const theme = {
   main: {
@@ -26,7 +26,7 @@ const App = ({ store }) => (
       <Router>
         <Switch>
           <Route exact path="/" component={HomePage}/>
-          <Route exact path="/people" component={PeoplePage}/>
+          <Route exact path="/people" component={PeoplePageContainer}/>
           <Route exact path="/introduction" component={LandingPage}/>
         </Switch>
       </Router>
