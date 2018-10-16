@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { toggleEmailCharacterFrequency } from '../actions/Actions'
-import EmailCharacterFrequency from './EmailCharacterFrequency'
+import EmailCharacterFrequencyContainer from '../containers/EmailCharacterFrequencyContainer'
 import { ConnectedNavBar } from '../containers/ConnectedNavBar'
 import { PeopleContainer } from '../containers/PeopleContainer'
 import { ActionButtonContainer } from '../containers/ActionButtonContainer'
@@ -17,7 +17,7 @@ export const PeoplePage = ({app}) => {
         <div className='email-character-frequency-wrap'>
           <ActionButtonContainer action={toggleEmailCharacterFrequency}>{button_text} e-mail character frequency</ActionButtonContainer>
           { app.email_character_frequency_visible &&
-            <EmailCharacterFrequency />
+            <EmailCharacterFrequencyContainer />
           }
         </div>
         <PeopleContainer />
