@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app actions hideEmailCharacterFrequency Dispatches the hideEmailCharacterFrequency action 1`] = `
+Array [
+  Object {
+    "type": "HIDE_EMAIL_CHARACTER_FREQUENCY",
+  },
+]
+`;
+
+exports[`app actions showEmailCharacterFrequency Dispatches the showEmailCharacterFrequency action 1`] = `
+Array [
+  Object {
+    "type": "SHOW_EMAIL_CHARACTER_FREQUENCY",
+  },
+]
+`;
+
+exports[`app actions toggleEmailCharacterFrequency Dispatches the toggleEmailCharacterFrequency action 1`] = `
+Array [
+  Object {
+    "type": "TOGGLE_EMAIL_CHARACTER_FREQUENCY",
+  },
+]
+`;
