@@ -7,6 +7,7 @@ let login = ()=> ( <a href='/users/auth/salesloft'>Login</a> )
 
 let NavBar = ({user}) => (
   <nav>
+    <h1>SalesLoft Dev Interview</h1>
     <NavLink exact to='/' activeClassName='active'>Home</NavLink>
     <NavLink exact to='/people' activeClassName='active'>People</NavLink>
     {user ? user() : login() }
