@@ -6,4 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-CreatePeopleJob.perform_now
+# Attempt to seed with API if API_KEY is in ENV
+if ENV['SALESLOFT_API_KEY']
+  CreatePeopleJob.perform_now(ENV['SALESLOFT_API_KEY'])
+end

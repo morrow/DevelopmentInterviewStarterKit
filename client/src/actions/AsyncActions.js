@@ -13,7 +13,12 @@ export function fetchMe() {
 export function fetchPeople() {
   return dispatch => {
     return fetch('/api/people.json', creds)
-      .then(response => response.json())
+      .then(response => {
+        if(response.status == 401){
+          alert('No valid API credentials found. Please login or add to ENV and the restart server.')
+        }
+        return response.json()
+      })
       .then(people => dispatch(actions.receivePeople(people)))
   }
 }

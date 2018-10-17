@@ -1,8 +1,8 @@
 class CreatePeopleJob < ApplicationJob
   queue_as :default
 
-  def perform(*args)
-    people = FetchPeopleJob.perform_now
+  def perform(token)
+    people = FetchPeopleJob.perform_now(token)
     people.map{ |p|
       Person.create(
         name: p['display_name'],
