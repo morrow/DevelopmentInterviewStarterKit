@@ -24,7 +24,7 @@ var config = {
       },
       {
         test: /\.css$/,
-        include: APP_DIR,
+        include: [APP_DIR, /node_modules/],
         loader: [ 'style-loader', 'css-loader' ]
       }
     ]

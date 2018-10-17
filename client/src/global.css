@@ -81,3 +81,18 @@ main h1 {
 .home main a:hover {
   background:#ccc;
 }
+
+.email-character-frequency-wrap {
+  display: block;
+  text-align: center;
+}
+
+.email-character-frequency-wrap .email-character-frequency {
+  margin:1em;
+}
+
+.ReactTable .rt-thead.-header {
+  box-shadow:none !important;
+  border-bottom: 1px solid #ccc;
+  background:#eee;
+}
