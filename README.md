@@ -47,3 +47,9 @@ bundle exec foreman start
 ```
 8.) Navigate to localhost:5000
 
+9.) To run tests
+
+bundle exec rspec
+yarn test
+
+
