@@ -31,3 +31,21 @@ export function toggleEmailCharacterFrequency(){
     type: actions.TOGGLE_EMAIL_CHARACTER_FREQUENCY,
   }
 }
+
+export function showPossibleDuplicates(){
+  return {
+    type: actions.SHOW_POSSIBLE_DUPLICATES,
+  }
+}
+
+export function hidePossibleDuplicates(){
+  return {
+    type: actions.HIDE_POSSIBLE_DUPLICATES,
+  }
+}
+
+export function togglePossibleDuplicates(){
+  return {
+    type: actions.TOGGLE_POSSIBLE_DUPLICATES,
+  }
+}
