@@ -101,6 +101,10 @@ main h1 {
   font-size:1.5em;
 }
 
+.home .social {
+  text-align:center;
+}
+
 .home .social a {
   color: inherit;
   margin: 1em;
