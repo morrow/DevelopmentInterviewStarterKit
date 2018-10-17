@@ -82,12 +82,13 @@ main h1 {
   background:#ccc;
 }
 
-.email-character-frequency-wrap {
+.email-character-frequency-wrap, .possible-duplicates-wrap {
   display: block;
   text-align: center;
 }
 
-.email-character-frequency-wrap .email-character-frequency {
+.email-character-frequency-wrap .email-character-frequency,
+.possible-duplicates-wrap .possible-duplicates {
   margin:1em;
 }
 

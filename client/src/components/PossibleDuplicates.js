@@ -7,7 +7,7 @@ const PossibleDuplicates = ({data,columns}) => (
     className='possible-duplicates'
     data={data}
     columns={columns}
-    minRows={3}
+    minRows={5}
   />)
 
 export default PossibleDuplicates
