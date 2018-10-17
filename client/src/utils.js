@@ -128,7 +128,7 @@ ZXCVBNM<>?
   })
 
   // return data in ReactTable compatible format
-  return Object.keys(scores).map(k=>({person_a: scores[k][0], person_b: scores[k][1], score: scores[k][2]}))
+  return Object.keys(scores).map(k=>({person_a: scores[k][0], person_b: scores[k][1], score: scores[k][2]})).sort((a,b)=> a.score > b.score ? 1 : -1)
 
 }
 

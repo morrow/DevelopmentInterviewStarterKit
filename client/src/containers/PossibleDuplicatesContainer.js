@@ -1,3 +1,4 @@
+import React from 'react'
 import PossibleDuplicates from '../components/PossibleDuplicates'
 import { connect } from 'react-redux'
 import { getPossibleDuplicates } from '../utils'
@@ -7,15 +8,34 @@ const mapStateToProps = state => ({
   columns: [
     {
       Header: 'Person A',
-      accessor: 'person_a'
+      accessor: 'person_a',
+      Cell: row => (
+        <div className='person' style={{margin:0}}>
+          <div className='name'>{row.value.name}</div>
+          <div className='email'>{row.value.email}</div>
+          <div className='title'>{row.value.title}</div>
+        </div>
+      ),
+      minWidth: 300,
     },
     {
       Header: 'Person B',
       accessor: 'person_b',
+      Cell: row => (
+        <div className='person' style={{margin:0}}>
+          <div className='name'>{row.value.name}</div>
+          <div className='email'>{row.value.email}</div>
+          <div className='title'>{row.value.title}</div>
+        </div>
+      ),
+      minWidth: 300,
     },
     {
-      Header: 'Match Score',
-      accessor: 'score'
+      Header: 'Difference',
+      accessor: 'score',
+      Cell: row => (
+        <div className='score'>{Math.round(row.value * 100)/100}</div>
+      )
     }
   ]
 });
