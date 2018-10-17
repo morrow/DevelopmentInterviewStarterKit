@@ -14,9 +14,9 @@ export const getEmailCharacterFrequency = (people)=>{
   let ids = Object.keys(people);
   // get character array from people data
   if(ids.length > 1){
-    character_array = ids.map(i=> people[i] )                       /* Transform object with id keys for each person into array of people */
-                        .reduce((acc,val)=> acc.email + val.email ) /* Reduce array of objects into continuous string of all email characters */
-                        .split('');                                  /* Split combined email string into array of individual characters */
+    character_array = ids.map(i=> people[i] )                                   /* Transform object with id keys for each person into array of people */
+                        .reduce((acc,val)=> ({email: acc.email + val.email }) ) /* Reduce array of objects into continuous string of all email characters */
+                        .email.split('');                                       /* Split combined email string into array of individual characters */
   }
   else if(ids.length == 1){
     // fetch first email value and split
