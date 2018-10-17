@@ -18,53 +18,53 @@ describe('getEmailCharacterFrequency', ()=> {
     }
     const mock_result = [
       {
-        "character": "a",
-        "frequency": 3
+       "character": "a",
+       "frequency": 3,
       },
       {
-        "character": "l",
-        "frequency": 3
+       "character": "l",
+       "frequency": 3,
       },
       {
-        "character": "e",
-        "frequency": 2
+       "character": "e",
+       "frequency": 2,
       },
       {
-        "character": "o",
-        "frequency": 2
+       "character": "o",
+       "frequency": 2,
       },
       {
-        "character": "m",
-        "frequency": 2
+       "character": "m",
+       "frequency": 2,
       },
       {
-        "character": "s",
-        "frequency": 2
+       "character": "s",
+       "frequency": 2,
       },
       {
-        "character": "@",
-        "frequency": 1
+       "character": "@",
+       "frequency": 1,
       },
       {
-        "character": "i",
-        "frequency": 1
+       "character": "i",
+       "frequency": 1,
       },
       {
-        "character": "f",
-        "frequency": 1
+       "character": "f",
+       "frequency": 1,
       },
       {
-        "character": "t",
-        "frequency": 1
+       "character": "t",
+       "frequency": 1,
       },
       {
-        "character": ".",
-        "frequency": 1
+       "character": ".",
+       "frequency": 1,
       },
       {
-        "character": "c",
-        "frequency": 1
-      }
+       "character": "c",
+       "frequency": 1,
+      },
     ]
     expect(getEmailCharacterFrequency(mock_people_data)).toEqual(mock_result)
   });
@@ -88,71 +88,59 @@ describe('getEmailCharacterFrequency', ()=> {
       },
     }
     const mock_result = [
-     {
-       'character': 'e',
-       'frequency': 4,
-     },
-     {
-       'character': 'l',
-       'frequency': 3,
-     },
-     {
-       'character': 'f',
-       'frequency': 2,
-     },
-     {
-       'character': 'i',
-       'frequency': 2,
-     },
-     {
-       'character': 'm',
-       'frequency': 2,
-     },
-     {
-       'character': 'a',
-       'frequency': 2,
-     },
-     {
-       'character': 'd',
-       'frequency': 2,
-     },
-     {
-       'character': 'o',
-       'frequency': 2,
-     },
-     {
-       'character': 's',
-       'frequency': 2,
-     },
-     {
-       'character': 'n',
-       'frequency': 2,
-     },
-     {
-       'character': '@',
-       'frequency': 1,
-     },
-     {
-       'character': 'b',
-       'frequency': 1,
-     },
-     {
-       'character': 't',
-       'frequency': 1,
-     },
-     {
-       'character': '.',
-       'frequency': 1,
-     },
-     {
-       'character': 'u',
-       'frequency': 1,
-     },
-     {
-       'character': 'c',
-       'frequency': 1,
-     },
-   ]
+      {
+       "character": "l",
+       "frequency": 9,
+      },
+      {
+       "character": "a",
+       "frequency": 7,
+      },
+      {
+       "character": "e",
+       "frequency": 6,
+      },
+      {
+       "character": "o",
+       "frequency": 6,
+      },
+      {
+       "character": "m",
+       "frequency": 6,
+      },
+      {
+       "character": "s",
+       "frequency": 6,
+      },
+      {
+       "character": "@",
+       "frequency": 3,
+      },
+      {
+       "character": "i",
+       "frequency": 3,
+      },
+      {
+       "character": "f",
+       "frequency": 3,
+      },
+      {
+       "character": "t",
+       "frequency": 3,
+      },
+      {
+       "character": ".",
+       "frequency": 3,
+      },
+      {
+       "character": "c",
+       "frequency": 3,
+      },
+      {
+       "character": "b",
+       "frequency": 2,
+      },
+    ]
     expect(getEmailCharacterFrequency(mock_people_data)).toEqual(mock_result)
   });
 });
