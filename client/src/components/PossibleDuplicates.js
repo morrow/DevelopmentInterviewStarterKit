@@ -4,7 +4,7 @@ import 'react-table/react-table.css'
 
 const PossibleDuplicates = ({data,columns}) => (
   <ReactTable
-    className='possible-duplicates'
+    className='possible-duplicates -striped'
     data={data}
     columns={columns}
     minRows={5}

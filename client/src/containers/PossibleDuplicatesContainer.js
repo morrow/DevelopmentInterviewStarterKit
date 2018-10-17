@@ -16,7 +16,7 @@ const mapStateToProps = state => ({
           <div className='title'>{row.value.title}</div>
         </div>
       ),
-      minWidth: 300,
+      minWidth: 250,
     },
     {
       Header: 'Person B',
@@ -28,7 +28,7 @@ const mapStateToProps = state => ({
           <div className='title'>{row.value.title}</div>
         </div>
       ),
-      minWidth: 300,
+      minWidth: 250,
     },
     {
       Header: 'Difference',

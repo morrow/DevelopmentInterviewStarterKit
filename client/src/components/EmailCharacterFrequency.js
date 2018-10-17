@@ -5,9 +5,10 @@ import 'react-table/react-table.css'
 const EmailCharacterFrequency = ({data, columns}) => (
 
   <ReactTable
-    className='email-character-frequency'
+    className='email-character-frequency -striped'
     data={data}
     columns={columns}
+    minRows={5}
   />
 
 )
