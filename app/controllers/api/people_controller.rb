@@ -7,7 +7,7 @@ class Api::PeopleController < Api::BaseController
     if Person.all.length < 1
       CreatePeopleJob.perform_now
     end
-    respond_with Person.all.to_json
+    respond_with Person.all.sort_by(&:name).to_json
   end
 
 end
