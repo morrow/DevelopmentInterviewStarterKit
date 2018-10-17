@@ -33,13 +33,13 @@ bundle install
 ```
 npm install
 ```
-5.) Create and migrate Sqlite Databases
-```
-bundle exec rake db:create && bundle exec rake db:migrate
-```
-6.) Copy the .env.sample to .env and fill out the values
+5.) Copy the .env.sample to .env and fill out the values
 ```
 cp .env.sample .env
+```
+6.) Create and migrate Sqlite Databases
+```
+bundle exec rake db:create && bundle exec rake db:migrate
 ```
 7.) Start the development server
 ```
@@ -48,8 +48,8 @@ bundle exec foreman start
 8.) Navigate to localhost:5000
 
 9.) To run tests
-
+```
 bundle exec rspec
-yarn test
-
+npm test
+```
 
