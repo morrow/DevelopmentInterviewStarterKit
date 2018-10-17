@@ -1,7 +1,8 @@
 {
   "name": "SalesLoftInterviewKit",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "test": "jest --verbose"
   },
   "private": true,
   "dependencies": {
