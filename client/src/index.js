@@ -23,7 +23,19 @@ window.store = store
 store.dispatch(fetchMe());
 store.dispatch(fetchPeople());
 
-ReactDOM.render(
-  <App store={store} />,
-  document.getElementById('root')
-);
+// renderApp function for hot reloading
+const renderApp = App => {
+  const NextApp = require('./components/App').default;
+  ReactDOM.render(
+    <NextApp store={store} />,
+    document.getElementById('root')
+  );
+}
+
+// hot loading
+if (module.hot) {
+  module.hot.accept("./components/App", () => { renderApp(App) })
+}
+
+// initial render
+renderApp(App)
